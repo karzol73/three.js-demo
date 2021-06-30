@@ -1,3 +1,3 @@
-# three.js-demo
+three.js-demo
 
-[my link](file:///C:/my_file.pdf)
+[demo](https://karzol73.github.io/react-starter-kit/)
