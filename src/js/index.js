@@ -33,7 +33,7 @@ let renderer,
 
 let earthRadius = 0.5,
     moonRadius = earthRadius * 0.2726,
-    moonEarthDistance = earthRadius * 384 // real distance, but not used here
+    moonEarthDistance = earthRadius * 384 // real earth moon distance, but not used here
 
 let moonOrbit = 0
 
@@ -109,7 +109,7 @@ function animate() {
 
     moonMesh.position.x = Math.cos(moonOrbit) * 2
     moonMesh.position.z = Math.sin(moonOrbit) * 4
-    moonOrbit += 0.01
+    moonOrbit += 0.001
     moonMesh.rotation.y += 0.0001
 
     requestAnimationFrame(animate)
