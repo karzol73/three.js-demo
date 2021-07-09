@@ -49,7 +49,7 @@ function init() {
 
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.01, 1000)
 
-    camera.position.z = 4
+    camera.position.z = 12
 
     renderer = new THREE.WebGLRenderer()
     renderer.setSize(window.innerWidth, window.innerHeight)
@@ -107,10 +107,10 @@ function animate() {
     cloudMesh.rotation.y += 0.00098
     cloudMesh.rotation.z += 0.000099
 
-    moonMesh.position.x = Math.cos(moonOrbit) * 2
-    moonMesh.position.z = Math.sin(moonOrbit) * 4
+    moonMesh.position.x = Math.cos(moonOrbit) * 4
+    moonMesh.position.z = Math.sin(moonOrbit) * 4.5
     moonOrbit += 0.001
-    moonMesh.rotation.y += 0.0001
+    moonMesh.rotation.y += 0.001
 
     requestAnimationFrame(animate)
 }
